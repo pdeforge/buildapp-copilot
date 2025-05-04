@@ -8,7 +8,7 @@ class UserModelTest(TestCase):
 
 class TeamModelTest(TestCase):
     def test_create_team(self):
-        team = Team.objects.create(name='Team A')
+        team = Team.objects.create(name='Team A', members=[])
         self.assertEqual(team.name, 'Team A')
 
 class ActivityModelTest(TestCase):
